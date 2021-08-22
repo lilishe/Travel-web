@@ -1,0 +1,91 @@
+body{
+    background: $light;
+}
+.header{
+    background: url(../img/Hero.png);
+    height: 380px;
+    background-size: cover;
+    .space-4{
+        letter-spacing: 4px;
+    }
+    .selectArea{
+        background-color: rgba(225,225,225,.7);
+        color: $black;
+    }
+    .hotBtn{
+        background: $white;
+        border-radius: 5px;
+        max-width: 800px;
+        margin-top: 79px;
+    }
+}
+.main{
+
+    .line{
+        max-width: 1200px;
+        margin: 150px auto 50px auto;
+        border:3px dashed $info;
+        .icons-down{
+            border:2px solid $info;
+            border-radius: 50%;
+            padding: 10px;
+            background: $light;
+            top: -20px;
+            left: 50%;
+        }
+    }
+    .title{
+        margin-top: 65px;
+        margin-bottom: 24px;
+    }
+    .img{
+        height: 155px;
+        background-size: cover;
+        background-position: center;
+        .name{
+            font-size: 24px;
+            bottom: 0px;
+            left:22px;
+        }
+        .zone{
+            font-size: 18px;
+            right: 22px;
+            bottom: 0;
+        }
+    }
+    .opentime img{
+        margin-right: 9px;
+    }
+    .add img{
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    .tel img{
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+    }
+    .tag img{
+        margin-right: 8px;
+    }
+}
+
+.footer{
+    background: $info;
+    text-align: center;
+    padding: 24px 0;
+    p{
+        margin: 0;
+    }
+    .text{
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+    }
+    .data{
+        color: $warning;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}
