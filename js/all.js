@@ -29,7 +29,7 @@ axios.get('https://raw.githubusercontent.com/hexschool/KCGTravel/master/datastor
             selectArea.appendChild(str);
         });
         title.textContent = '全部區域';
-        show('all',1);
+        show('all');
     }
 
     //頁數以及資料
