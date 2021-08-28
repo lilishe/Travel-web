@@ -11722,6 +11722,23 @@ body {
   background: #f8f9fa;
 }
 
+.top-btn {
+  background: url(../img/btn_goTop.png) no-repeat center/cover;
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  right: 8%;
+  bottom: 100px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.fly {
+  opacity: 0;
+  -webkit-transform: translateY(900px);
+          transform: translateY(900px);
+}
+
 .header {
   background: url(../img/Hero.png);
   height: 380px;

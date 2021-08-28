@@ -10,15 +10,18 @@
     <meta name="copyright" content="謝佳伶">
     <meta name="distribution" content="global">
     <title>高雄旅遊網</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="icon" href="img/Hero.png">
     <link rel="stylesheet" href="scss/all.css">
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="top-btn fly"></div>
+    </div>
     <section class="container-fluid header">
         <h1 class="text-light text-center pt-8 space-4">高雄旅遊資訊網</h1>
         <div class="form-group w-50 mt-9 mx-auto">
             <select class="form-control form-control-lg selectArea" id="selectArea">
-                <option value="all">全部區域</option>
             </select>
         </div>
         <div class="hotBtn mx-auto py-3" id="hotBtn">
@@ -31,10 +34,10 @@
                     <a href="#" class="btn btn-success text-white">三民區</a>
                 </li>
                 <li class="col-md-3 col-6 text-center">
-                    <a href="#" class="btn btn-warning text-white">左營區</a>
+                    <a href="#" class="btn btn-warning text-white">新興區</a>
                 </li>
                 <li class="col-md-3 col-6 text-center">
-                    <a href="#" class="btn btn-info">大樹區</a>
+                    <a href="#" class="btn btn-info">鹽埕區</a>
                 </li>
             </div>
         </div>
@@ -43,7 +46,9 @@
         <div class="line position-relative">
             <img class="position-absolute icons-down" src="img/icons_down.png" alt="">
         </div>
-        <h2 class="title text-center text-primary font-weight-bolder" id="title"></h2>
+        <h2 class="title text-center text-primary font-weight-bolder" id="title">
+            <i class="fas fa-spinner fa-pulse"></i>載入中
+        </h2>
         <div class="list row justify-content-around" id="list">
             <!-- <div class="card col-md-6 bg-light border-0 mb-6">
                     <div class="img position-relative" style="background-image: url(https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E4%B8%89%E6%B0%91%E5%8D%80/%E4%B8%AD%E9%83%BD%E6%BF%95%E5%9C%B0%E5%85%AC%E5%9C%9207.jpg);">
@@ -118,6 +123,7 @@
         <p class="data">資料來源：高雄市政府 </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/all.js"></script>
 </body>
 </html>
