@@ -166,6 +166,23 @@ function init(){
     getZone();
     filterZone('全部區域');
 }
-
 //渲染AJAX
 open();
+
+$(document).ready(function(){
+    $(window).scroll(function(e){
+        let scrollY = window.scrollY;
+        if(scrollY < 500){
+            $('.top-btn').addClass('fly');
+        }else{
+            $('.top-btn').removeClass('fly');
+        }
+        $('#hotBtn').removeClass('fly');
+        $('#selectArea').removeClass('fly');
+    });
+    $('.top-btn').click(function(e){
+        $('html,top').animate({
+            scrollTop:0
+        },1000);
+    });
+});
